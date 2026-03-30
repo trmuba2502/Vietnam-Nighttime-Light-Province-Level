@@ -39,7 +39,7 @@ Vietnam Nighttime Light Province Level/
 
 ---
 
-## ⚙️ Pipeline Steps
+## Pipeline Steps
 
 ### Step 1 — `crop_vietnam.py`
 Crops all raw global VIIRS TIF files to Vietnam's bounding box with a padding margin.
@@ -95,7 +95,7 @@ Prints a summary table for each TIF: total pixels, NoData count, zero-value coun
 
 ---
 
-## 🗺️ Data Source
+## Data Source
 
 - **VIIRS Day/Night Band (DNB)** monthly/annual composites — accessed via [NOAA/NGDC](https://www.ngdc.noaa.gov/) or [NASA Earthdata](https://earthdata.nasa.gov/)
 - **Province boundaries** — `Vietnam_Provinces.geojson` (GADM or similar administrative boundary dataset)
