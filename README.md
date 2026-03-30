@@ -20,8 +20,6 @@ The pipeline covers three stages:
 ```
 Group Project - new/
 │
-├── VIIRS/                              # Raw global VIIRS TIF files (input)
-│
 ├── Vietnam_NightLight_VIIRS/           # Cropped to Vietnam bounding box
 ├── Vietnam_NightLight_VIIRS_clean/     # Masked: pixels outside Vietnam = 0
 ├── Vietnam_NightLight_VIIRS_provinces/ # High-res PNG visualizations per year
