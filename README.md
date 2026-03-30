@@ -41,7 +41,6 @@ Group Project - new/
 ├── visualize_provinces.py              # Step 4: Render province maps as PNG
 │
 ├── Nighttime-light-cleaned.ipynb       # Jupyter notebook for analysis
-└── VIIRS.ipynb                         # Jupyter notebook (exploratory)
 ```
 
 ---
