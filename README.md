@@ -18,8 +18,7 @@ The pipeline covers three stages:
 ## Project Structure
 
 ```
-Group Project - new/
-│
+Vietnam Nighttime Light Province Level/
 ├── Vietnam_NightLight_VIIRS/           # Cropped to Vietnam bounding box
 ├── Vietnam_NightLight_VIIRS_clean/     # Masked: pixels outside Vietnam = 0
 ├── Vietnam_NightLight_VIIRS_provinces/ # High-res PNG visualizations per year
@@ -29,7 +28,6 @@ Group Project - new/
 │
 ├── Vietnam_Province_Nightlight.csv          # Long format: Province | Year | Mean_Nightlight
 ├── Vietnam_Province_Nightlight_Wide.csv     # Wide format: Province | 2012 | 2013 | ...
-├── Vietnam_Nightlight_Index_by_Province_2013-2020.csv
 ├── Vietnam_Nightlight_Index_by_Province_2013-2020.nc
 │
 ├── crop_vietnam.py                     # Step 1: Crop global TIFs to Vietnam
@@ -37,8 +35,6 @@ Group Project - new/
 ├── read_vietnam_tif.py                 # Utility: Inspect TIF file statistics
 ├── extract_province_nightlight.py      # Step 3: Zonal stats → CSV output
 ├── visualize_provinces.py              # Step 4: Render province maps as PNG
-│
-├── Nighttime-light-cleaned.ipynb       # Jupyter notebook for analysis
 ```
 
 ---
@@ -151,8 +147,7 @@ python visualize_provinces.py
 |------|-------------|
 | `Vietnam_Province_Nightlight.csv` | Long-format panel data: Province × Year → Mean radiance |
 | `Vietnam_Province_Nightlight_Wide.csv` | Wide-format: one column per year |
-| `Vietnam_Nightlight_Index_by_Province_2013-2020.csv` | Indexed nightlight data (2013–2020) |
-| `Vietnam_Nightlight_Index_by_Province_2013-2020.nc` | NetCDF version for GIS/stats software |
+| `Vietnam_Nightlight_Index_by_Province_2012-2020.nc` | NetCDF version for GIS/stats software |
 | `Vietnam_NightLight_VIIRS_provinces/*.png` | High-res nightlight maps per year |
 
 ---
